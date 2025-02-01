@@ -21,7 +21,7 @@ LIMIT 10;
 -- option 1
 SELECT *
 FROM customer_purchases
-WHERE product_id = '4' or product_id =  '9';
+WHERE product_id = 4 or product_id =  9;
 
 -- option 2
 
@@ -36,9 +36,12 @@ filtered by vendor IDs between 8 and 10 (inclusive) using either:
 SELECT *,
 			quantity * cost_to_customer_per_qty AS price
 	FROM customer_purchases
-	WHERE vendor_id BETWEEN 8 AND 10;
+	WHERE vendor_id >= 8 AND vendor_id <= 10;
 -- option 2
-
+SELECT *,
+			quantity * cost_to_customer_per_qty AS price
+	FROM customer_purchases
+	WHERE vendor_id BETWEEN 8 AND 10;
 
 
 --CASE
@@ -112,7 +115,7 @@ SELECT
     SUM(quantity * cost_to_customer_per_qty) AS total_cost 
 FROM customer cust 
 INNER JOIN customer_purchases custp 
-ON cust.customer_id = custp.customer_id -
+ON cust.customer_id = custp.customer_id 
 GROUP BY cust.customer_id
 HAVING total_cost  > 2000
 ORDER BY cust.customer_last_name, cust.customer_first_name
