@@ -54,7 +54,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+The difference between type 1 and type 2 slowly changing dimensions is that type 1 would overwrite the old value with a new value with no retention of history. In comparison type 2 would retain both the current and the historical recorded value.
 ```
 
 ***
@@ -182,5 +182,12 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+The ethical issues that are important to this story are concepts of labour, LMM proliferation and bias in LMMs. The author discusses how our society’s perception of AI systems isn’t necessarily accurate. We perceive these systems to be independent of humans and don’t often think about the amount of human work that’s gone into building them. She emphasized the importance of the datasets that were used to train AI systems and how that work is completed by human annotators for minimal compensation (10$ an hour). This calls into question the power balance between the human annotators that are making minimal financial gains and then big tech companies that are reaping enormous profits from their systems. 
+
+She emphasized that ‘every single piece of decision-making in a high-tech neural network initially rests on a human being manually putting something together and making a choice.’ The article underscores the involvement of human input and how it inevitably introduces bias into AI systems. For instance, in ImageNET Roulette different individuals assigned offensive and negative labels to an image of a man. This raises the issue of how societal prejudice can become embedded in AI and amplify these preconceptions instead of eliminating them.
+
+In response, designers of these training databases are proposing changes to their systems like removing offensive synsets. However perhaps a better approach would be to hire annotators with more diversity that have a range of perspectives.
+
+This article brings up important topics of discussion as LMM proliferation is happening at a staggering pace and being implemented into our daily lives, digital services, at our workplaces. With this in mind, big tech companies should be transparent about the data they use to train their models and take an honest and ethical approach in training them to eliminate societal biases.
+
 ```
